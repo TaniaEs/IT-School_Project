@@ -1,0 +1,380 @@
+/* Top Section + copii */
+
+.top-section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9.6rem 0px;
+}
+
+.bg-contacte {
+    position: absolute;
+    top: -7.6rem;
+    bottom: 0;
+    z-index: -1;
+    width: 100vw;
+    background-image: url('https://www.itschool.ro/_next/static/media/background.d5722ffa.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-section .hero-title h1 {
+    font-weight: 500;
+    font-size: var(--font-size-xxl);
+}
+
+/* Mid Section + copii */
+
+.mid-section {
+    position: relative;
+    padding-bottom: 7.6rem;
+}
+
+.mid-section .mid-section-form {
+    position: relative;
+    display: flex;
+    border-radius: 1.6rem;
+    box-shadow: rgb(25 30 48 / 10%) 0px 30px 60px 0px;
+    background-color: rgb(253, 253, 253);
+    margin-inline: auto;
+    margin-top: -4rem;
+}
+
+.mid-section .mid-section-form .form-input {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 3rem;
+}
+
+.mid-section .mid-section-form .form-input::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    right: 0px;
+    top: 4.8rem;
+    bottom: 4.8rem;
+    border-right: 1px solid rgba(25, 30, 48, 0.1);
+}
+
+.mid-section .mid-section-form .form-input .course-registration {
+    display: flex;
+    align-items: flex-start;
+    height: 3.5rem;
+    gap: 1rem;
+}
+
+.mid-section .mid-section-form .form-input .course-registration .name {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mid-section .mid-section-form .form-input .course-registration .name label {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: rgba(25, 30, 48, 0.6);
+    margin-bottom: 0.25rem;
+}
+
+.mid-section .mid-section-form .form-input .course-registration .name .input-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(25, 30, 48, 0.4);
+    border-radius: 2rem;
+    margin-bottom: 5px;
+    overflow: hidden;
+    height: 40px;
+}
+
+.mid-section .mid-section-form .form-input .course-registration .name .input-container .first-name {
+    width: 100%;
+    border: 0px;
+    outline: 0px;
+    background-color: transparent;
+    font-size: 0.8rem;
+    padding: 1.1rem 1.6rem;
+    color: rgb(25, 30, 48);
+}
+
+.mid-section .mid-section-form .form-input .course-registration .name .input-container .last-name {
+    width: 100%;
+    border: 0px;
+    outline: 0px;
+    background-color: transparent;
+    font-size: 0.8rem;
+    padding: 1.1rem 1.6rem;
+    color: rgb(25, 30, 48);
+}
+
+.mid-section .mid-section-form .form-input .course-registration .name .input-container .telefon {
+    width: 100%;
+    border: 0px;
+    outline: 0px;
+    background-color: transparent;
+    font-size: 0.8rem;
+    padding: 1.1rem 1.6rem;
+    color: rgb(25, 30, 48);
+}
+
+.mid-section .mid-section-form .form-input .course-registration .name .input-container .e-mail {
+    width: 100%;
+    border: 0px;
+    outline: 0px;
+    background-color: transparent;
+    font-size: 0.8rem;
+    padding: 1.1rem 1.6rem;
+    color: rgb(25, 30, 48);
+}
+
+.mid-section .mid-section-form .form-input .course-registration-message {
+    display: flex;
+    align-items: flex-start;
+    height: 6rem;
+    gap: 2.4rem;
+}
+
+.mid-section .mid-section-form .form-input .course-registration-message .message-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mid-section .mid-section-form .form-input .course-registration-message .message-container label {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: rgba(25, 30, 48, 0.6);
+    margin-bottom: 0.25rem;
+}
+
+.mid-section .mid-section-form .form-input .course-registration-message .message-container .message-input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(25, 30, 48, 0.4);
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.mid-section .mid-section-form .form-input .course-registration-message .message-container .message-input .message-text {
+    width: 100%;
+    min-height: 5rem;
+    border: 0px;
+    outline: 0px;
+    background-color: transparent;
+    font-size: 0.8rem;
+    padding: 1.1rem 1.6rem;
+    color: var(--text-color-muted);
+}
+
+.mid-section .mid-section-form .form-input .captcha {
+    gap: 1rem;
+}
+
+.mid-section .mid-section-form .form-input .terms {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.mid-section .mid-section-form .form-input .terms .checkbox-container {
+    cursor: pointer;
+    width: 5%;
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    color: rgba(25, 30, 48, 0.4);
+}
+
+.mid-section .mid-section-form .form-input .terms .terms-text {
+    width: 100%;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.mid-section .mid-section-form .form-input .submit-message .button-success {
+    width: 100%;
+    height: 40px;
+}
+
+.mid-section .mid-section-form .form-info {
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    padding: 3rem;
+}
+
+.mid-section .form-info .title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(25, 30, 48);
+    margin: 0px;
+}
+
+.mid-section .form-info .form-info-text {
+    font-size: 1rem;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    color: rgb(25, 30, 48);
+}
+
+.mid-section .form-info .icons {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.mid-section .form-info .icons1 {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.mid-section .form-info .icons img {
+    max-width: 100%;
+}
+
+.mid-section .form-info .icons .details {
+    font-size: 1rem;
+    font-weight: 550;
+    color: rgb(25, 30, 48);
+    margin: 0px;
+}
+
+.mid-section .form-info .icons .stretch {
+    align-self: stretch;
+}
+
+.mid-section .form-info .icons1 img {
+    width: 36px;
+}
+
+.mid-section .form-info .icons1 .details {
+    font-size: 1rem;
+    font-weight: 550;
+    color: rgb(25, 30, 48);
+    margin: 0px;
+}
+
+/* Section 3 */
+
+.last-section {
+    position: relative;
+    width: 100%;
+    max-width: 50rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 0px 7.6rem;
+}
+
+.last-section img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.last-section .contact-locations {
+    display: flex;
+    flex-direction: column;
+    width: 38rem;
+    margin: auto;
+}
+
+.last-section .contact-locations .contact-subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    color: rgba(25, 30, 48, 0.4);
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+}
+
+.last-section .contact-locations .contact-title {
+    font-size: 2rem;
+    font-weight: normal;
+    color: rgb(25, 30, 48);
+    margin: 0px;
+    margin-bottom: 40px;
+}
+
+.last-section .contact-locations-icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    width: 100%;
+    width: 38rem;
+    align-items: center;
+}
+
+.last-section .contact-locations-icons .pin-loc {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.last-section .contact-locations-icons .pin-loc img {
+    width: 2rem;
+    height: 2rem;
+    max-width: 100%;
+}
+
+footer .footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--text-color-muted);
+    margin-bottom: 50px;
+    font-weight: 100;
+    opacity: 0.3;
+}
+
+@media (max-width: 760px) {
+    main .top-section {
+        padding: 7.2rem 0px;
+    }
+
+    main .mid-section {
+        padding: 7.2rem 0px;
+    }
+
+    .last-section {
+        padding: 7.2rem 0px;
+    }
+}
+
+
+@media (max-width: 960px) {
+    main .mid-section .mid-section-form {
+        flex-direction: column-reverse;
+    }
+
+    main .mid-section .mid-section-form .form-input {
+        padding: 3.2rem;
+        width: 100%;
+    }
+
+    main .mid-section .mid-section-form .form-info {
+        padding: 3.2rem;
+        width: 100%;
+    }
+
+    .last-section .contact-locations-icons {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 960px) {
+    .last-section .contact-locations-icons .pin-loc:last-child {
+        grid-column: 2 / span 1;
+    }
+}

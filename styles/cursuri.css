@@ -1,0 +1,710 @@
+/* Stlizare Main */
+
+main {
+    grid-area: main / main / main / main;
+    padding-top: 0px;
+    width: 100%;
+    max-width: min(1240px, 100vw);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section-one {
+    position: relative;
+    margin: 0px;
+    width: 100%;
+    padding: 9.6rem 0px;
+}
+
+.section-one .background {
+    position: absolute;
+    z-index: -1;
+    top: -7.6rem;
+    left: -2rem;
+    bottom: 0px;
+    width: 100vw;
+    background-image: url('https://www.itschool.ro/_next/static/media/background.175e0d96.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-one .wrapper {
+    margin: auto;
+    max-width: 80rem;
+    display: flex;
+    gap: 2.4rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-one .wrapper .wrapper-title {
+    text-align: center;
+    color: var(--text-color-white);
+    font-weight: 500;
+    margin: 0px;
+}
+
+.section-one .wrapper .wrapper-subtitle {
+    font-weight: normal;
+    overflow-wrap: break-word;
+    text-align: center;
+    color: var(--text-color-white);
+    font-size: var(--font-size-m);
+}
+
+main .courses {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 1.2rem;
+    border-bottom: 1px solid var(--text-color-muted);
+    padding-bottom: 3.8rem;
+    padding-top: 3rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+}
+
+main .courses .padding-bottom {
+    padding-bottom: 5px;
+}
+
+main .courses .padding-bottom:first-child {
+    width: 120rem;
+}
+
+main .courses .courses-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    padding: 0.3rem 0.4rem;
+    border-radius: 2rem;
+    background-color: var(--text-color-muted);
+    margin-top: 18px;
+}
+
+main .courses .courses-container .container-body-all {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    flex: 1 1 0%;
+    user-select: none;
+    cursor: default;
+    color: rgb(0, 135, 104);
+    border-radius: 2rem;
+    background-color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 5px;
+}
+
+main .courses .courses-container .container-body {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    flex: 1 1 0%;
+    color: rgba(25, 30, 48, 0.6);
+    user-select: none;
+    display: block;
+}
+
+main .courses .input-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main .courses .input-container label {
+    font-size: 0.9rem;
+    font-weight: normal;
+    line-height: 1.33;
+    color: rgba(25, 30, 48, 0.6);
+    margin-bottom: 0.25rem;
+    cursor: default;
+}
+
+main .courses .input-container .search-input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(25, 30, 48, 0.4);
+    border-radius: 2rem;
+    margin-bottom: 5px;
+    overflow: hidden;
+    height: 2.5rem;
+}
+
+main .courses .input-container .search-input-span {
+    cursor: pointer;
+    margin-left: 1.2rem;
+    margin-right: -0.6rem;
+    margin-top: 0.3rem;
+    color: rgba(25, 30, 48, 0.4);
+}
+
+main .courses .input-container .search-input-span svg {
+    overflow: hidden;
+}
+
+main .courses .input-container .input-id {
+    width: 100%;
+    border: 0px;
+    outline: 0px;
+    background-color: transparent;
+    font-size: 1.6rem;
+    padding: 16px;
+    color: rgb(25, 30, 48);
+}
+
+main .courses .padding-bottom2 {
+    padding-bottom: 5px;
+}
+
+main .courses .padding-bottom2 .radio-container-wrapper {
+    width: 100%;
+}
+
+main .courses .padding-bottom2 .radio-container-wrapper label {
+    font-size: 0.9rem;
+    font-weight: normal;
+    line-height: 1.33;
+    color: rgba(25, 30, 48, 0.6);
+    margin-bottom: 0.25rem;
+    cursor: default;
+}
+
+main .courses .padding-bottom2 .radio-container-wrapper .RadioDropdownstyle__Container {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    gap: 2.4rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1.2rem 0.8rem 1.6rem;
+    border-radius: 2rem;
+    cursor: not-allowed;
+    border: 1px solid rgba(25, 30, 48, 0.1);
+    background-color: rgba(25, 30, 48, 0.05);
+    z-index: 6;
+    height: 2.5rem;
+}
+
+main .courses .padding-bottom2 .radio-container-wrapper .RadioDropdownstyle__Container .RadioDropdownstyle__Selected {
+    color: var(--text-color-muted);
+}
+
+main .courses .padding-bottom2 .radio-container-wrapper .RadioDropdownstyle__Container .RadioDropdownstyle__Options {
+    position: absolute;
+    top: calc(100% + 0.2rem);
+    left: 0px;
+    min-width: 100%;
+    max-height: 32rem;
+    overflow-y: auto;
+    width: fit-content;
+    padding: 1.6rem;
+    opacity: 1;
+    border-radius: 1.6rem;
+    background-color: rgb(253, 253, 253);
+    box-shadow: rgb(25 30 48 / 10%) 0px 2rem 4rem 0px;
+    display: none;
+}
+
+/* Stilizare Sectiune 2 */
+
+main .section-two {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 3.5rem;
+    padding-bottom: 7rem;
+}
+
+main .section-two .section-two-container {
+    min-width: 1px;
+    width: 31%;
+}
+
+main .section-two .section-two-container .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 270px;
+    height: 23rem;
+    border-radius: 1.6rem;
+    box-shadow: rgb(25 30 48 / 10%) 0px 2rem 4rem 0px;
+    background-color: rgb(253, 253, 253);
+    padding: 2.4rem 0px;
+    position: relative;
+}
+
+main .section-two .section-two-container .card-header {
+    width: 100%;
+    padding: 0px;
+    align-self: flex-end;
+    margin-bottom: 15px;
+}
+
+main .section-two .section-two-container .card-title {
+    font-size: 1.5rem;
+    font-weight: 550;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+main .section-two .section-two-container .card-description {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+main .section-two .section-two-container .time-stamp {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+main .section-two .section-two-container .card .card-action {
+    position: absolute;
+    top: 340px;
+    right: 30px;
+}
+
+main .section-two .section-two-container .card .button-success {
+    background-color: transparent;
+    border: rgb(0, 135, 104) 1px solid;
+    color: rgb(0, 135, 104);
+    margin-left: 10px;
+    font-size: var(--font-size-default);
+    width: 5px;
+    height: 30px;
+}
+
+/* Stilizare Sectiune 3 */
+
+main .section-three {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+}
+
+main .section-three .courses-for-who {
+    flex: 1 1 0%;
+}
+
+main .section-three .courses-for-who .for-who-subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    color: rgba(25, 30, 48, 0.4);
+    margin-bottom: 40px;
+}
+
+main .section-three .courses-for-who .for-who-title {
+    font-size: 2rem;
+    font-weight: normal;
+    color: rgb(25, 30, 48);
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+main .section-three .courses-for-who .for-who-text {
+    font-size: 1rem;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    color: var(--text-color-dark);
+    margin-bottom: 30px;
+}
+
+main .section-three .image-for-who {
+    flex: 1 1 0%;
+}
+
+main .section-three .image-for-who img {
+    display: block;
+    max-width: 90%;
+    margin-bottom: 40px;
+}
+
+/* Stlizare Sectiune 4 */
+
+main .section-four {
+    padding: 96px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2.4rem;
+}
+
+main .section-four .courses-mustknow-titles {
+    width: 100%;
+}
+
+main .section-four .courses-mustknow-titles .courses-mustknow-subtitle {
+    width: 50%;
+    font-size: 1rem;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    color: rgba(25, 30, 48, 0.4);
+    margin-bottom: 30px;
+}
+
+main .section-four .courses-mustknow-titles .courses-mustknow-title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(25, 30, 48);
+    margin: 0px;
+}
+
+main .section-four .courses-mustknow-image {
+    flex: 1 1 0%;
+    display: block;
+    margin-right: 4rem;
+}
+
+main .section-four .courses-mustknow-image img {
+    max-width: 90%;
+    display: block;
+}
+
+main .section-four .courses-mustknow-content {
+    flex: 1 1 0%;
+}
+
+main .section-four .courses-mustknow-content .courses-mustknow-container {
+    max-width: 46rem;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 0.4rem;
+    border-radius: 2rem;
+    background-color: rgba(25, 30, 48, 0.1);
+    margin-bottom: 20px;
+}
+
+main .section-four .courses-mustknow-content .courses-mustknow-container .input-liveonline1 {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    flex: 1 1 0%;
+    user-select: none;
+    cursor: default;
+    color: rgb(0, 135, 104);
+    border-radius: 2rem;
+    background-color: white;
+}
+
+main .section-four .courses-mustknow-content .courses-mustknow-container .input-liveonline {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    flex: 1 1 0%;
+    color: rgba(25, 30, 48, 0.6);
+}
+
+main .section-four .courses-mustknow-content .courses-mustknow-text {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    color: rgb(25, 30, 48);
+    margin-bottom: 30px;
+}
+
+main .section-four .courses-mustknow-content .courses-mustknow-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    ;
+}
+
+main .section-four .courses-mustknow-content .courses-mustknow-items .mustknow-item {
+    display: flex;
+    margin-bottom: 2.4rem;
+}
+
+main .section-four .courses-mustknow-content .courses-mustknow-items .mustknow-item .container-shape {
+    grid-area: shape / shape / shape / shape;
+    margin-right: 2.4rem;
+}
+
+main .section-four .courses-mustknow-content .courses-mustknow-items .mustknow-item .container-shape .item-shape {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0px 50% 50% 0px;
+    background-color: rgba(25, 30, 48, 0.1);
+}
+
+main .section-four .courses-mustknow-content .courses-mustknow-items .mustknow-item .item-content {
+    grid-area: shape / shape / shape / shape;
+    margin-right: 2.4rem;
+}
+
+main .section-four .courses-mustknow-content .courses-mustknow-items .mustknow-item .item-content .item-description {
+    padding-bottom: 16px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(25, 30, 48);
+    margin: 0px;
+}
+
+main .section-four .courses-mustknow-content .courses-mustknow-items .mustknow-item .item-content .item-text {
+    font-size: 1rem;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    color: rgb(25, 30, 48);
+}
+
+/* Sectiunea 5 */
+
+main .section-five {
+    position: relative;
+    padding: 7.5rem 0px;
+    display: flex;
+    justify-content: center;
+}
+
+main .section-five::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: -2rem;
+    bottom: 0px;
+    width: 100vw;
+    background-image: url('https://www.itschool.ro/_next/static/media/background.c097b26b.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .section-five .help-container {
+    margin: auto;
+    max-width: 60rem;
+}
+
+main .section-five .help-container .help-subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    text-align: center;
+    color: var(--text-color-white);
+    margin-bottom: 30px;
+}
+
+main .section-five .help-container .help-title {
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    color: white;
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+main .section-five .help-container .help-text {
+    font-size: 1rem;
+    font-weight: normal;
+    overflow-wrap: break-word;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+main .section-five .help-container .button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-success {
+    background-color: white;
+    color: rgb(0, 135, 104);
+    font-size: 1rem;
+    width: fit-content;
+}
+
+/* Subscribe */
+
+.newsletter {
+    position: relative;
+    margin: 0px;
+    width: 100%;
+    padding: 96px 0px;
+    display: flex;
+    gap: 2.4rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text-color-dark);
+}
+
+.newsletter::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 1px;
+    background-color: rgba(25, 30, 48, 0.1);
+}
+
+.newsletter .newsletter-title {
+    font-weight: normal;
+    color: var(--text-color-dark);
+}
+
+.newsletter .newsletter-subtitle {
+    overflow-wrap: break-word;
+    font-weight: normal;
+    color: var(--text-color-dark);
+}
+
+.newsletter .newsletter-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.newsletter .newsletter-container .input-wrapper {
+    position: relative;
+    background-color: white;
+    border-radius: 2rem;
+    border: 1px solid rgba(25, 30, 48, 0.4);
+    display: flex;
+}
+
+.newsletter .newsletter-container .input-wrapper input {
+    width: 30rem;
+    border: 0px;
+    outline: 0px;
+    background-color: transparent;
+    font-size: var(--font-size-default);
+    padding: 0.5rem 6rem 0.5rem 1.5rem;
+    color: var(--text-color-muted);
+}
+
+.newsletter .newsletter-container .input-wrapper p {
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    padding: 0.4rem 1.2rem;
+    border-radius: 2rem;
+    background-color: rgb(0, 135, 104);
+    color: white;
+}
+
+/* Media Queries */
+
+@media (min-width: 1200px) {
+    main .section-one .background {
+        left: calc(-50vw + 600px);
+        width: 100vw;
+    }
+
+    main .section-five::before {
+        left: calc(-50vw + 600px);
+        width: 100vw;
+    }
+}
+
+@media (max-width: 960px) {
+    main .section-three {
+        flex-direction: column;
+    }
+
+    main .section-three .image-for-who {
+        margin-left: auto;
+        max-width: 100%;
+    }
+
+    main .section-four {
+        flex-direction: column;
+    }
+
+    main .section-four .courses-mustknow-titles .courses-mustknow-title {
+        width: 100%;
+    }
+
+    main .section-four .courses-mustknow-image {
+        width: 80%;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 1200px) {
+    main .section-four {
+        align-items: revert;
+    }
+
+    main .courses {
+        gap: 2.4rem;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    main .section-three .image-for-who {
+        background-size: auto 6rem;
+    }
+}
+
+
+@media (max-width: 760px) {
+    main .section-one {
+        padding: 7.2rem 0px;
+    }
+
+    main .section-four {
+        padding: 7.2rem 0px;
+    }
+
+    main .section-two {
+        padding-top: 2.4rem;
+        padding-bottom: 7.2rem;
+    }
+
+    main .section-three {
+        padding: 7.2rem 0px;
+    }
+
+    main .courses {
+        gap: 2.4rem;
+    }
+
+    main .courses .padding-bottom {
+        width: 100%;
+    }
+
+
+    footer {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 850px) {
+    main .section-two .card .button-success {
+        display: none;
+    }
+}
